@@ -10,11 +10,30 @@ body {
 }
 
 
-
 /* Calculator container */
 .calculator {
     width: 300px;
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Display */
+.display {
+    width: 87%;
+    height: 60px;
+    background-color: #fefbd8;
+    border: none;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
