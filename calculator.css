@@ -37,3 +37,19 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+/* Button styles */
+.btn {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.operator {
+    background-color: #fe9241;
+}
