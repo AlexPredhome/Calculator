@@ -50,6 +50,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Operator buttons */
+
 .operator {
     background-color: #fe9241;
 }
@@ -57,4 +59,19 @@ body {
 /* Clear button */
 .clear {
     background-color: #e8162b;
+}
+
+
+/* Button hover effects */
+
+.btn:hover {
+    background-color: #555;
+}
+
+.operator:hover {
+    background-color: #ec7c21;
+}
+
+.clear:hover {
+    background-color: #c0392b;
 }
