@@ -53,3 +53,8 @@ body {
 .operator {
     background-color: #fe9241;
 }
+
+/* Clear button */
+.clear {
+    background-color: #e8162b;
+}
