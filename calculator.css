@@ -9,7 +9,11 @@ body {
     margin: 0;
 }
 
-
+#description {
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Aligns the container at the top */
+    height: 100vh; /* Full viewport height */
+}
 /* Calculator container */
 .calculator {
     width: 300px;
@@ -39,7 +43,7 @@ body {
 }
 
 /* Button styles */
-.btn {
+.numbers {
     background-color: #444;
     color: #fff;
     border: none;
@@ -75,3 +79,4 @@ body {
 .clear:hover {
     background-color: #c0392b;
 }
+
