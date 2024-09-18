@@ -25,9 +25,13 @@ body {
 }
 
 .buttons {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    height:20px;
+    font-size:3em;
+    font-family:"Cabin", sans-serif;
 }
 
 /* Display */
@@ -39,7 +43,7 @@ body {
     text-align: right;
     padding: 20px;
     font-size: 2em;
-    color: #fff;
+    color: #000000d2;
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -54,12 +58,21 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+}
+
+
+.function {
+    flex:1 0 100%;
 }
 
 /* Operator buttons */
 
 .operator {
     background-color: #fe9241;
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 /* Clear button */
