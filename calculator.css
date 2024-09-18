@@ -53,31 +53,26 @@ body{
 
 /* Button styles */
 
-.buttons {
-    display: grid;
+button {
+    display: flex;
     flex: 0 0 auto;
+    gap: 10px;
     box-sizing: border-box;
-    height:20px;
     font-size:3em;
-    font-family:"Cabin", sans-serif;
     cursor: pointer;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
+}
+
+.buttons {
+display:flex;
 }
 
 .numbers {
     background-color: #444;
     color: #fff;
-    border: none;
-    font-size: 1.5em;
-    padding: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display:grid;
-}
-
-
-.function {
-    flex:1 0 100%;
+    flex:3;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .operator {
@@ -86,6 +81,12 @@ body{
     display:flex;
     flex-wrap:wrap;
 }
+
+.function {
+    flex:1 0 100%;
+}
+
+
 
 /* Clear button */
 .clear {
