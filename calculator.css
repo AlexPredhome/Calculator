@@ -1,19 +1,30 @@
 /* General body styling */
-body {
-    display: flex;
+* {
+    margin:0;
+}
+
+html {
+    height:100%;
+    width:100%;
+}
+
+body{
+    min-height: 100%;
+    display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f4f4f4;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
 }
+
+
 
 #description {
     justify-content: center; /* Centers horizontally */
     align-items: flex-start; /* Aligns the container at the top */
     height: 100vh; /* Full viewport height */
 }
+
+
 /* Calculator container */
 .calculator {
     width: 300px;
@@ -24,15 +35,7 @@ body {
     height:400px;
 }
 
-.buttons {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    flex: 0 0 auto;
-    box-sizing: border-box;
-    height:20px;
-    font-size:3em;
-    font-family:"Cabin", sans-serif;
-}
+
 
 /* Display */
 .display {
@@ -49,6 +52,18 @@ body {
 }
 
 /* Button styles */
+
+.buttons {
+    display: grid;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    height:20px;
+    font-size:3em;
+    font-family:"Cabin", sans-serif;
+    cursor: pointer;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .numbers {
     background-color: #444;
     color: #fff;
@@ -56,17 +71,14 @@ body {
     font-size: 1.5em;
     padding: 20px;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
-
+    display:grid;
 }
 
 
 .function {
     flex:1 0 100%;
 }
-
-/* Operator buttons */
 
 .operator {
     background-color: #fe9241;
@@ -83,7 +95,7 @@ body {
 
 /* Button hover effects */
 
-.btn:hover {
+.buttons:hover {
     background-color: #555;
 }
 
