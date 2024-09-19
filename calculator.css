@@ -27,12 +27,12 @@ body{
 
 /* Calculator container */
 .calculator {
-    width: 300px;
+    width: 350px;
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
-    height:400px;
+    height:500px;
 }
 
 
@@ -54,32 +54,31 @@ body{
 /* Button styles */
 
 button {
-    display: flex;
-    flex: 0 0 auto;
+    display: grid;
     gap: 10px;
     box-sizing: border-box;
-    font-size:3em;
+    font-size:1.5em;
     cursor: pointer;
-    grid-template-columns: repeat(4, auto);
+   
+    
 }
 
 .buttons {
-display:flex;
+display:grid;
+grid-template-columns: repeat(4, 1fr);
 }
 
 .numbers {
     background-color: #444;
     color: #fff;
-    flex:3;
-    display:flex;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .operator {
     background-color: #fe9241;
     flex:1;
-    display:flex;
-    flex-wrap:wrap;
+    display:grid;
 }
 
 .function {
