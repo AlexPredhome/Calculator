@@ -1,6 +1,7 @@
 /* General body styling */
 * {
     margin:0;
+    padding: 0;
 }
 
 html {
@@ -27,15 +28,13 @@ body{
 
 /* Calculator container */
 .calculator {
-    width: 350px;
+    width:440px;
+    height:635px;
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
-    height:500px;
 }
-
-
 
 /* Display */
 .display {
@@ -54,31 +53,34 @@ body{
 /* Button styles */
 
 button {
-    display: grid;
+    flex: 1 0 33%;
     gap: 10px;
     box-sizing: border-box;
     font-size:1.5em;
     cursor: pointer;
-   
+    padding: 20px;
     
 }
 
 .buttons {
-display:grid;
-grid-template-columns: repeat(4, 1fr);
+    display:flex;
+    height: 20%;
+    margin:0px 15px 10px 15px; 
+    transition: background-color 0.3s ease;
 }
 
 .numbers {
     background-color: #444;
     color: #fff;
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .operator {
     background-color: #fe9241;
     flex:1;
-    display:grid;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .function {
