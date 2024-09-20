@@ -56,7 +56,7 @@ function operate(firstNumber, secondNumber, userOperator) {
 }
 
 
-// QUERYSELECTORS
+// query selectors and adding event listeners
 let display = document.querySelector(".display");
 let one = document.querySelector(".one");
 let two = document.querySelector(".two");
@@ -111,6 +111,21 @@ function clear() {
     secondUserNumber = null;
     operator = null;
 }
+
+//function to add the operator to the equation
+
+function operatorInput(userOperator) {
+    if (operator != null) {
+        equals();
+    }
+    if (operator === null) {
+        operator = userOperator;
+        firstUserNumber = displayNumber;
+        displayNumber = 0;
+        display.textContent = `${firstUserNumber} ${operator}`;
+    }
+}
+
 
 //function for when you hit the equals sign
 function equals() {
